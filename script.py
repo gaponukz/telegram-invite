@@ -2,12 +2,9 @@ from telethon.tl.functions.channels import InviteToChannelRequest
 from telethon.sync import TelegramClient
 from pyrogram import Client, filters
 import random, asyncio, json
-import sys, os
 
 with open('setting.json', 'r', encoding = 'utf') as out:
     setting = json.load(out)
-
-sys.stdout = open(os.devnull, 'w')
 
 app = Client(
     'my_account',
